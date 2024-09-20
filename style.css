@@ -388,3 +388,74 @@ footer .fa:hover {
     z-index: 2; /* Ensure text is always above the particles and background */
   }
   
+
+  /* Officer grid */
+.officer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 2em;
+    justify-items: center;
+}
+
+/* Officer cards */
+.officer-card {
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.officer-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Officer photos */
+.officer-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+}
+
+/* Officer names and positions */
+.officer-card h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 0.5em 0;
+}
+
+.officer-card h4 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+/* Officer bio and website */
+.officer-card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 1.5em;
+}
+
+.officer-card a {
+    font-size: 1em;
+    color: #ff6347;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.officer-card a:hover {
+    border-bottom: 1px solid #ff6347;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .officer-grid {
+        grid-template-columns: 1fr;
+    }
+}
